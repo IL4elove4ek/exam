@@ -1,0 +1,224 @@
+.header {
+    max-width: 1312px;
+    height: 739px;
+}
+ .nav {
+    display: flex;
+    margin-left: 142.27px;
+    max-width: 1204.713px;
+    margin-top: 43px;
+}
+.logo {
+    max-width: 122.825px;
+    @include text($green, $font-main, 32px, normal, 500, normal);
+}
+.menu {
+    @include text($text, $font-main, 16px, normal, 400, normal);
+    width: 518px;
+    margin-left: 562.95px;
+    ul{
+       display: flex;
+ justify-content: space-between;
+ align-items: center; 
+    }
+   .txt{
+    transition: 0.3s;
+}
+li{
+    @include text($text, $font-main, 16px, normal, 400, normal);
+    transition: 0.7s;
+    animation-name: line;
+    animation-duration: 4s;
+    animation-iteration-count:inherit;
+    animation-direction: alternate;
+    @keyframes line{
+        0%{
+        margin-left:-800px ;
+        }
+        50%{
+            transform: rotate(45deg);
+        }
+        100%{
+    margin-left: 0px;
+        }
+    }
+}
+.home:hover{
+    color: $green;
+}
+.about:hover{
+    color: $green;
+}
+.us:hover{
+    color: $green;
+}
+.comp:hover{
+    color: $green;
+}
+.pages:hover{
+    color: $green;
+}
+}
+
+.header__mid {  
+    h1{
+        @include text($text, $font-main, 75px, normal, 600, normal);
+        max-width: 545.55px;
+        margin-left: 142.27px;
+        margin-top: 105px;
+    }    
+    
+    .line__decoration{
+        max-width: 777.97px;
+height: 174.168px;
+position: relative;
+bottom: 120px;
+ z-index: -1;
+ .ld2{
+        position: relative;
+bottom: 40.5px; 
+    }
+    .ld3{
+        position: relative;
+bottom: 62.1px; 
+    }
+    .ld4{
+        position: relative;
+bottom: 93.6px; 
+    }
+    }
+    p{
+        max-width: 533px;
+        @include text($text-2, $font-main, 16px, normal, 400,22.784px);
+        margin-left: 139px;
+        position: relative;
+        bottom: 140px;
+    }
+    button{
+        width: 200px;
+height: 68px;
+margin-left: 139px;
+position: relative;
+bottom: 110px;
+background-color: $green;
+@include text($white, $font-main, 16px, normal, 400, normal);
+transition: 0.5s;
+cursor: pointer;
+    }
+    button:hover{
+        background-color: $features-button;
+        color: $green;
+        border: 1px solid $green;
+    }
+    .img{
+        margin-left: 809px;
+        position: relative;
+        bottom: 500px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:416px){
+    .nav {
+    display: flex;
+    flex-direction: column;
+     margin-left: 0;
+    max-width: 416px;
+    height: 339px;
+    margin-top: 0;
+    padding-top: 43px;
+}
+.logo {
+   margin: auto;
+    @include text($green, $font-main, 32px, normal, 500, normal);
+   
+}
+.menu {
+    @include text($text, $font-main, 16px, normal, 400, normal);
+    max-width: 107px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    ul{
+     display: block;
+ 
+    }
+ 
+   .txt{
+    transition: 0.3s;
+     @include text($text, $font-main, 16px, normal, 400, normal);
+}
+li{
+   
+ 
+    animation-name: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+}
+
+.header__mid {
+    max-width: 416px;
+    overflow: hidden;
+    h1{
+        @include text($text, $font-main, 45px, normal, 600, normal);
+        text-align: center;
+        max-width: 365px;
+        margin: auto;
+    }
+    .line__decoration{
+        max-width: 777.97px;
+height: 174.168px;
+position: relative;
+bottom: 120px;
+ z-index: -1;
+ .ld2{
+        position: relative;
+bottom: 40.5px; 
+    }
+    .ld3{
+        position: relative;
+bottom: 62.1px; 
+    }
+    .ld4{
+        position: relative;
+bottom: 93.6px; 
+    }
+    }
+    p{
+        max-width: 325px;
+        @include text($text-2, $font-main, 16px, normal, 400,22.784px);
+        margin:auto;
+       
+    }
+    button{
+        width: 200px;
+height: 68px;
+margin: auto;
+position:relative;
+bottom: 110px;
+background-color: $green;
+@include text($white, $font-main, 16px, normal, 400, normal);
+transition: 0.5s;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+    }
+    button:hover{
+        background-color: $features-button;
+        color: $green;
+        border: 1px solid $green;
+    }
+    
+}
+}

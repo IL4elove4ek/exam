@@ -1,0 +1,117 @@
+.features{
+    width: 1197px;
+
+
+}
+.features__lines {
+ 
+    margin-top: 88px;
+    
+        margin-left: 108.5px;
+   
+    h5{
+        @include text($text, $font-main, 18px, normal, 400, normal);
+        margin-bottom: 7px
+    }
+    p{
+        @include text($text, $font-main, 14px, normal, 500, normal);
+
+opacity: 0.75;
+    }
+}
+
+.blocks{
+    width: 1197px;
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57.5px;
+    padding-bottom: 57.5px;
+    position: relative;
+    img{
+        max-width: 70px;
+        height: 70px;
+    }
+.description{
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+.size:hover{
+    transform: scale(1.2);
+
+}
+.hp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 22.52px;
+}
+}
+
+.lines{
+    width: 1197px;
+    border:  1.5px solid  #707070;
+opacity: 0.15;
+border-left: none;
+    border-right: none;
+}
+
+
+
+
+@media screen and (max-width:416px){
+    .features{
+        max-width: 416px;
+    
+    
+    }
+    .features__lines {
+     
+        margin: 88px auto 0 ;
+        
+
+       
+        h5{
+            @include text($text, $font-main, 18px, normal, 400, normal);
+            margin-bottom: 7px
+        }
+        p{
+            @include text($text, $font-main, 14px, normal, 500, normal);
+    
+    opacity: 0.75;
+        }
+    }
+    .lines{
+        border: none;
+    }
+    .blocks{
+        max-width: 416px;
+        display:block;
+        justify-content: space-between;
+        margin:57.5px auto 57.5px;
+        
+        img{
+            max-width: 70px;
+            height: 70px;
+            margin-bottom: 25px;
+        }
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: 0.5s;
+        padding-bottom: 25px;
+    }
+    .size:hover{
+        transform: scale(1.2);
+    
+    }
+    .hp{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    }
+}

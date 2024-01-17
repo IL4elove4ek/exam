@@ -1,0 +1,92 @@
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .images{
+        width: 541px;
+height: 608px;
+background-color: $benefit-bg;
+margin-top: 133px;
+margin-left: 106px;
+padding-left: 48px;
+    }
+}
+
+.check__item {
+    margin-left: 731px;
+    position: absolute;
+    p{
+        @include text($text, $font-main, 15px, normal, 500, normal);
+        margin-top: 222px;
+    }
+    h2{
+        @include text($text, $font-main, 60px, normal, 500, normal);
+        max-width: 537px;
+        margin-top: 20px
+    }
+    ul{
+        margin-top: 67px;
+        
+    }
+    img{
+        margin-right: 21px;
+    }
+    li{
+        @include text($text, $font-main, 16px, normal, 400, normal);
+       margin-bottom: 21px;
+      display: flex;
+      align-items: center;
+    }
+}
+
+
+
+
+@media screen and (max-width:416px){
+    .benefits {
+        display: flex;
+        
+
+        .images{
+            max-width: 416px;
+    height: 364.29px;
+    background-color: $benefit-bg;
+    margin: 0 auto 0;
+    padding-left: 48px;
+    img{
+        max-width: 316px;
+    }
+        }
+    }
+    
+    .check__item {
+        margin-left: 0;
+        position: absolute;
+        padding-left: 20px;
+        p{
+            @include text($text, $font-main, 15px, normal, 500, normal);
+            margin-top: 380px;
+            text-align: center;
+
+        }
+        h2{
+            @include text($text, $font-main, 40px, normal, 500, normal);
+            max-width: 366px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        ul{
+            margin-top: 67px;
+            padding-left: 50px;
+        }
+        img{
+            margin-right: 21px;
+        }
+        li{
+            @include text($text, $font-main, 16px, normal, 400, normal);
+           margin-bottom: 21px;
+          display: flex;
+          align-items: center;
+        }
+    }
+
+}
